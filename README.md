@@ -1,16 +1,16 @@
-Simple hello world test with Docker and Mono
+Simple "hello world" test with Docker and Mono
 ===
 
-This sample will run a simple C# console application in a Ubuntu Docker container. 
+This example will run a simple C# console application in a Ubuntu Docker container. 
 
-The application will print a simple "Hello Mono" to the console.
+The application will print "Hello Mono!" to the console.
 
 Step 1
 ---
 
-####Set up a vagrant box to run the sample on
+####Set up a vagrant box to run the example on
 
-######Open a command prompt an run:
+######Open a command prompt and run:
 
     $ vagrant init phusion/ubuntu-14.04-amd64
     $ vagrant up
@@ -29,13 +29,17 @@ Step 1
 
 Step 2
 ---
-Copy the folder to the VM with SCP:
+######Copy the "MonoDockerTest" folder to the VM with SCP:
 
     $ scp -P 2222 -r MonoDockerTest vagrant@127.0.0.1:/home/vagrant/DockerTest/
+    
+username: vagrant
+
+password: vagrant
 
 Step 3
 ---
-In the VM:
+######In the VM:
 
 1. Navigate to the folder with the Dockerfile
  
